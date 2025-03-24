@@ -1,0 +1,26 @@
+sessions:
+  - name: client
+    containers:
+      - name: flwr-client
+        network: flwr-cec-net
+        image: flwr-client-virtualpod
+        source: flwr-client/flwr-client-web-ort/bundle.js
+        launcher: JSModule
+        resourcesUrl: "resources/flwr-client/flwr-client-web-ort"
+        environment:
+          AGGREGATOR_URL: http://flwr-cec-aggregator/aggregate
+          MODEL_SERVER: "models"
+        reachableVPods:
+          - flwr-cec-aggregator
+
+      # - name: flwr-client
+      #   network: flwr-cec-net
+      #   image: virtualpod
+      #   source: flwr-client/flwr-client-web-tf/bundle.js
+      #   launcher: JSModule
+      #   environment:
+      #     AGGREGATOR_URL: http://flwr-cec-aggregator/aggregate
+      #     MODEL_SERVER: "flwr-client-web-tf/models"
+      #   reachableVPods:
+      #     - aggregator
+      #   resourcesUrl: "resources/flwr-client/flwr-client-web-tf"
