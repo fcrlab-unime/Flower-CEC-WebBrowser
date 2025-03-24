@@ -1,0 +1,2 @@
+/*! For license information please see Round.js.LICENSE.txt */
+import{Round}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const roundConfig=createUnaryKernelConfig(Round);

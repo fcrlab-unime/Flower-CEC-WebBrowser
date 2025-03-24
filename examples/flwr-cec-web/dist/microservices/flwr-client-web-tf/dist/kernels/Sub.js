@@ -1,0 +1,2 @@
+/*! For license information please see Sub.js.LICENSE.txt */
+import{Sub}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!0;export const subConfig=createBinaryKernelConfig(Sub,!0);

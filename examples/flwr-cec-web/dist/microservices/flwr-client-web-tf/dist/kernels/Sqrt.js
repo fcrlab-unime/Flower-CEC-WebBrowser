@@ -1,0 +1,2 @@
+/*! For license information please see Sqrt.js.LICENSE.txt */
+import{Sqrt}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const sqrtConfig=createUnaryKernelConfig(Sqrt);

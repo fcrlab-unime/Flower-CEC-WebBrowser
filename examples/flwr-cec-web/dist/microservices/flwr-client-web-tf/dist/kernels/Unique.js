@@ -1,0 +1,2 @@
+/*! For license information please see Unique.js.LICENSE.txt */
+import{Unique}from"@tensorflow/tfjs-core";import{uniqueImplCPU}from"../kernel_utils/shared";function unique(e){const{inputs:t,attrs:u,backend:n}=e,{axis:i}=u,{x:a}=t,{outputValues:o,outputShape:r,indices:p}=uniqueImplCPU(n.readSync(a.dataId),i,a.shape,a.dtype);return[n.makeOutput(r,a.dtype,void 0,o),n.makeOutput([p.length],"int32",void 0,p)]}export const uniqueConfig={kernelName:Unique,backendName:"wasm",kernelFunc:unique};

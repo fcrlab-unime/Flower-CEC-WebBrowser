@@ -1,0 +1,2 @@
+/*! For license information please see LogicalAnd.js.LICENSE.txt */
+import{LogicalAnd}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const logicalAndConfig=createBinaryKernelConfig(LogicalAnd,!1,"bool");

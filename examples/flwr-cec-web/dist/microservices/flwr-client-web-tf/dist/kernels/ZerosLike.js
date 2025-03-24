@@ -1,0 +1,2 @@
+/*! For license information please see ZerosLike.js.LICENSE.txt */
+import{ZerosLike}from"@tensorflow/tfjs-core";function zerosLike(e){const{inputs:{x:r},backend:o}=e,n=o.makeOutput(r.shape,r.dtype);return o.typedArrayFromHeap(n).fill(0),n}export const zerosLikeConfig={kernelName:ZerosLike,backendName:"wasm",kernelFunc:zerosLike};

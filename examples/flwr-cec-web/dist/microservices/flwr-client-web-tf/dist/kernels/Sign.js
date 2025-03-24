@@ -1,0 +1,2 @@
+/*! For license information please see Sign.js.LICENSE.txt */
+import{Sign}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const signConfig=createUnaryKernelConfig(Sign);

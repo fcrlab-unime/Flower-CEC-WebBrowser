@@ -1,0 +1,2 @@
+/*! For license information please see Mod.js.LICENSE.txt */
+import{Mod}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";export const modConfig=createBinaryKernelConfig(Mod,!0);

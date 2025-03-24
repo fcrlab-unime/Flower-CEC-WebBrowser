@@ -1,0 +1,2 @@
+/*! For license information please see Maximum.js.LICENSE.txt */
+import{Maximum}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const maximumConfig=createBinaryKernelConfig(Maximum,!1);

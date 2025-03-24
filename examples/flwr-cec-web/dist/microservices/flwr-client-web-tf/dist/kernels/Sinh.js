@@ -1,0 +1,2 @@
+/*! For license information please see Sinh.js.LICENSE.txt */
+import{Sinh}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const sinhConfig=createUnaryKernelConfig(Sinh);

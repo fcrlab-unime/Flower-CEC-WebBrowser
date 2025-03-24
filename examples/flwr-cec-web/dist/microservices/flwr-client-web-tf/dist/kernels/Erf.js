@@ -1,0 +1,2 @@
+/*! For license information please see Erf.js.LICENSE.txt */
+import{Erf}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const erfConfig=createUnaryKernelConfig(Erf);

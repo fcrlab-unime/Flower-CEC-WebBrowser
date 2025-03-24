@@ -1,0 +1,2 @@
+/*! For license information please see IsNan.js.LICENSE.txt */
+import{IsNan}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const isNaNConfig=createUnaryKernelConfig(IsNan,"bool");

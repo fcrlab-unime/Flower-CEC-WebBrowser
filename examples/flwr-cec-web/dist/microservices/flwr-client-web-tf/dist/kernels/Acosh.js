@@ -1,0 +1,2 @@
+/*! For license information please see Acosh.js.LICENSE.txt */
+import{Acosh}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const acoshConfig=createUnaryKernelConfig(Acosh);

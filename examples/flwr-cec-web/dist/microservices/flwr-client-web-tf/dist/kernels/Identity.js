@@ -1,0 +1,2 @@
+/*! For license information please see Identity.js.LICENSE.txt */
+import{Identity,tensor}from"@tensorflow/tfjs-core";export function identity(t){const{inputs:{x:e},backend:n}=t;if("string"===e.dtype)return tensor(n.readSync(e.dataId),e.shape,e.dtype);const r=n.makeOutput(e.shape,e.dtype),o=n.typedArrayFromHeap(e);return n.typedArrayFromHeap(r).set(o),r}export const identityConfig={kernelName:Identity,backendName:"wasm",kernelFunc:identity};

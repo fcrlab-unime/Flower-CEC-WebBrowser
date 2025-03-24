@@ -1,0 +1,2 @@
+/*! For license information please see Atanh.js.LICENSE.txt */
+import{Atanh}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const atanhConfig=createUnaryKernelConfig(Atanh);

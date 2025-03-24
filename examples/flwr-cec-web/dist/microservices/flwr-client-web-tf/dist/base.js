@@ -1,0 +1,2 @@
+/*! For license information please see base.js.LICENSE.txt */
+import"./flags_wasm";import{registerBackend}from"@tensorflow/tfjs-core";import{BackendWasm,init}from"./backend_wasm";export{BackendWasm,getThreadsCount,setThreadsCount,setWasmPath,setWasmPaths}from"./backend_wasm";export{version as version_wasm}from"./version";const WASM_PRIORITY=2;registerBackend("wasm",(async()=>{const{wasm:s}=await init();return new BackendWasm(s)}),2);

@@ -1,0 +1,2 @@
+/*! For license information please see Ceil.js.LICENSE.txt */
+import{Ceil}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const ceilConfig=createUnaryKernelConfig(Ceil);

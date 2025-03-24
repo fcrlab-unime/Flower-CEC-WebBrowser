@@ -1,0 +1,2 @@
+/*! For license information please see Sigmoid.js.LICENSE.txt */
+import{Sigmoid,util}from"@tensorflow/tfjs-core";let wasmFunc;function setup(e){wasmFunc=e.wasm.cwrap(Sigmoid,null,["number","number"])}function sigmoid(e){const{backend:t,inputs:{x:a}}=e,i=t.dataIdMap.get(a.dataId).id,n=t.makeOutput(a.shape,a.dtype),d=t.dataIdMap.get(n.dataId).id;return 0===util.sizeFromShape(n.shape)||wasmFunc(i,d),n}export const sigmoidConfig={kernelName:"Sigmoid",backendName:"wasm",setupFunc:setup,kernelFunc:sigmoid};

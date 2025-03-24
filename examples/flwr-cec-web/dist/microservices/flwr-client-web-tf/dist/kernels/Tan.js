@@ -1,0 +1,2 @@
+/*! For license information please see Tan.js.LICENSE.txt */
+import{Tan}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const tanConfig=createUnaryKernelConfig(Tan);

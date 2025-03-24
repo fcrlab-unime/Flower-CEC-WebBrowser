@@ -1,0 +1,2 @@
+/*! For license information please see StringToHashBucketFast.js.LICENSE.txt */
+import{StringToHashBucketFast}from"@tensorflow/tfjs-core";import{stringToHashBucketFastImplCPU}from"../kernel_utils/shared";function stringToHashBucketFast(t){const{backend:s,inputs:e,attrs:a}=t,{input:n}=e,{numBuckets:r}=a,o=s.readSync(n.dataId),u=stringToHashBucketFastImplCPU(o,r),c=s.makeOutput(n.shape,"int32");return s.typedArrayFromHeap(c).set(u),c}export const stringToHashBucketFastConfig={kernelName:StringToHashBucketFast,backendName:"wasm",kernelFunc:stringToHashBucketFast};

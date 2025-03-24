@@ -1,0 +1,2 @@
+/*! For license information please see Less.js.LICENSE.txt */
+import{Less}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const lessConfig=createBinaryKernelConfig(Less,!1,"bool");

@@ -1,0 +1,2 @@
+/*! For license information please see SparseSegmentSum.js.LICENSE.txt */
+import{SparseSegmentSum}from"@tensorflow/tfjs-core";import{setup,sparseSegmentReduction}from"./SparseSegmentReduction";function sparseSegmentSum(e){return sparseSegmentReduction(e,!1)}export const sparseSegmentSumConfig={kernelName:SparseSegmentSum,backendName:"wasm",setupFunc:setup,kernelFunc:sparseSegmentSum};

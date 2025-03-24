@@ -1,0 +1,2 @@
+/*! For license information please see Reshape.js.LICENSE.txt */
+import{Reshape,util}from"@tensorflow/tfjs-core";export function reshape(e){const{inputs:a,attrs:s}=e,{x:t}=a,{shape:p}=s,r=util.sizeFromShape(t.shape),n=util.inferFromImplicitShape(p,r);return util.assert(r===util.sizeFromShape(n),(()=>`new shape: ${n}, old shape: ${t.shape}. New shape and old shape must have the same number of elements.`)),e.backend.incRef(t.dataId),{dataId:t.dataId,shape:n,dtype:t.dtype}}export const reshapeConfig={kernelName:Reshape,backendName:"wasm",kernelFunc:reshape};

@@ -1,0 +1,2 @@
+/*! For license information please see Asin.js.LICENSE.txt */
+import{Asin}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const asinConfig=createUnaryKernelConfig(Asin);

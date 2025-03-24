@@ -1,0 +1,2 @@
+/*! For license information please see Rsqrt.js.LICENSE.txt */
+import{Rsqrt}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const rsqrtConfig=createUnaryKernelConfig(Rsqrt);

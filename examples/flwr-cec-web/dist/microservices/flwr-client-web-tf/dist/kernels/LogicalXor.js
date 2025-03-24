@@ -1,0 +1,2 @@
+/*! For license information please see LogicalXor.js.LICENSE.txt */
+import{LogicalXor}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const logicalXorConfig=createBinaryKernelConfig(LogicalXor,!1,"bool");

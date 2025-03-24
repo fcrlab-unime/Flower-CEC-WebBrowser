@@ -1,0 +1,2 @@
+/*! For license information please see types.js.LICENSE.txt */
+export var CppDType;!function(e){e[e.float32=0]="float32",e[e.int32=1]="int32",e[e.bool=2]="bool",e[e.string=3]="string",e[e.complex64=4]="complex64"}(CppDType||(CppDType={}));export var FusableActivation;!function(e){e[e.linear=0]="linear",e[e.relu=1]="relu",e[e.relu6=2]="relu6",e[e.prelu=3]="prelu",e[e.leakyrelu=4]="leakyrelu",e[e.sigmoid=5]="sigmoid",e[e.elu=6]="elu"}(FusableActivation||(FusableActivation={}));

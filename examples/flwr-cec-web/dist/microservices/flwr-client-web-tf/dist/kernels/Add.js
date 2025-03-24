@@ -1,0 +1,2 @@
+/*! For license information please see Add.js.LICENSE.txt */
+import{Add}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!0;export const addConfig=createBinaryKernelConfig(Add,!0);

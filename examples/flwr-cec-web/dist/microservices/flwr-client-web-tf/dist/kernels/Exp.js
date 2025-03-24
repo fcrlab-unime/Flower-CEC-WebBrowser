@@ -1,0 +1,2 @@
+/*! For license information please see Exp.js.LICENSE.txt */
+import{Exp}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const expConfig=createUnaryKernelConfig(Exp,"float32");

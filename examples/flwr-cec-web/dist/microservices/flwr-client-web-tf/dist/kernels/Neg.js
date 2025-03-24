@@ -1,0 +1,2 @@
+/*! For license information please see Neg.js.LICENSE.txt */
+import{Neg}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const negConfig=createUnaryKernelConfig(Neg);

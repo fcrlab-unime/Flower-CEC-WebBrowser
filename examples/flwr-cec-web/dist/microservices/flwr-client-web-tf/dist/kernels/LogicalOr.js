@@ -1,0 +1,2 @@
+/*! For license information please see LogicalOr.js.LICENSE.txt */
+import{LogicalOr}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const logicalOrConfig=createBinaryKernelConfig(LogicalOr,!1,"bool");

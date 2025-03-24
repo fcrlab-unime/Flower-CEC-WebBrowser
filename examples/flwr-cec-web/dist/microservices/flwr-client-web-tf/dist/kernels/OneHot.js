@@ -1,0 +1,2 @@
+/*! For license information please see OneHot.js.LICENSE.txt */
+import{OneHot}from"@tensorflow/tfjs-core";let wasmOneHot;function setup(e){wasmOneHot=e.wasm.cwrap(OneHot,null,["number","number","number","number","number"])}function oneHot(e){const{inputs:t,backend:n,attrs:a}=e,{indices:o}=t,{dtype:u,depth:r,onValue:s,offValue:d}=a,m=n.makeOutput([...o.shape,r],u),p=n.dataIdMap.get(m.dataId).id,c=n.dataIdMap.get(o.dataId).id;return wasmOneHot(c,r,s,d,p),m}export const oneHotConfig={kernelName:OneHot,backendName:"wasm",setupFunc:setup,kernelFunc:oneHot};

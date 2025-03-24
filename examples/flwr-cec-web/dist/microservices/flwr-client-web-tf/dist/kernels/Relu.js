@@ -1,0 +1,2 @@
+/*! For license information please see Relu.js.LICENSE.txt */
+import{Relu}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const reluConfig=createUnaryKernelConfig(Relu);

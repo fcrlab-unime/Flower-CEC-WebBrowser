@@ -1,0 +1,2 @@
+/*! For license information please see NonMaxSuppression_util.js.LICENSE.txt */
+export function parseResultStruct(e,t){const r=new Int32Array(e.wasm.HEAPU8.buffer,t,4),s=r[0],c=r[1],n=r[2],u=r[3];return e.wasm._free(t),{pSelectedIndices:s,selectedSize:c,pSelectedScores:n,pValidOutputs:u}}

@@ -1,0 +1,2 @@
+/*! For license information please see ClipByValue.js.LICENSE.txt */
+import{ClipByValue}from"@tensorflow/tfjs-core";let wasmClip;function setup(e){wasmClip=e.wasm.cwrap(ClipByValue,null,["number","number","number","number"])}function clip(e){const{inputs:a,backend:t,attrs:l}=e,{x:p}=a,{clipValueMin:n,clipValueMax:u}=l,i=t.dataIdMap.get(p.dataId).id,c=t.makeOutput(p.shape,p.dtype),r=t.dataIdMap.get(c.dataId).id;return wasmClip(i,n,u,r),c}export const clipByValueConfig={kernelName:ClipByValue,backendName:"wasm",setupFunc:setup,kernelFunc:clip};

@@ -1,0 +1,2 @@
+/*! For license information please see Step.js.LICENSE.txt */
+import{Step}from"@tensorflow/tfjs-core";import{CppDType}from"./types";let wasmStep;function setup(e){wasmStep=e.wasm.cwrap(Step,null,["number","number","number","number"])}function step(e){const{backend:t,inputs:p,attrs:a}=e,{alpha:n}=a,{x:s}=p,r=t.dataIdMap.get(s.dataId).id,m=t.makeOutput(s.shape,s.dtype),u=t.dataIdMap.get(m.dataId).id;return wasmStep(r,n,CppDType[s.dtype],u),m}export const stepConfig={kernelName:Step,backendName:"wasm",setupFunc:setup,kernelFunc:step};

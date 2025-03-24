@@ -1,0 +1,2 @@
+/*! For license information please see GreaterEqual.js.LICENSE.txt */
+import{GreaterEqual}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const greaterEqualConfig=createBinaryKernelConfig(GreaterEqual,!1,"bool");

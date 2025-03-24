@@ -1,0 +1,2 @@
+/*! For license information please see Range.js.LICENSE.txt */
+import{Range}from"@tensorflow/tfjs-core";import{rangeImplCPU}from"../kernel_utils/shared";export const range=e=>{const{backend:r,attrs:t}=e,{start:n,stop:a,step:o,dtype:s}=t,p=rangeImplCPU(n,a,o,s),m=r.makeOutput([p.length],s);return r.typedArrayFromHeap(m).set(p),m};export const rangeConfig={kernelName:Range,backendName:"wasm",kernelFunc:range};

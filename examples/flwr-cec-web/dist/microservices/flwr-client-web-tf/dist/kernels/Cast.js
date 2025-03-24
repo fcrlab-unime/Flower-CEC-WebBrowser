@@ -1,0 +1,2 @@
+/*! For license information please see Cast.js.LICENSE.txt */
+import{Cast}from"@tensorflow/tfjs-core";export function cast(t){const{inputs:{x:e},attrs:{dtype:a},backend:r}=t,s=r.makeOutput(e.shape,a),n=r.typedArrayFromHeap(e);return r.typedArrayFromHeap(s).set(n),s}export const castConfig={kernelName:Cast,backendName:"wasm",kernelFunc:cast};

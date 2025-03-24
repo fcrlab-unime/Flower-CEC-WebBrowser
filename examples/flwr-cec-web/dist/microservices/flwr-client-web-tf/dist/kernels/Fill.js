@@ -1,0 +1,2 @@
+/*! For license information please see Fill.js.LICENSE.txt */
+import{util}from"@tensorflow/tfjs-core";import{Fill}from"@tensorflow/tfjs-core";export function fill(t){const{attrs:{shape:e,value:l},backend:r}=t;let{attrs:{dtype:o}}=t;o=o||util.inferDtype(l);const n=r.makeOutput(e,o);return r.typedArrayFromHeap(n).fill(l),n}export const fillConfig={kernelName:Fill,backendName:"wasm",kernelFunc:fill};

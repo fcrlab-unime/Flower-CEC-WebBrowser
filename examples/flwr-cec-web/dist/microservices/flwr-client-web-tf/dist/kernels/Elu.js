@@ -1,0 +1,2 @@
+/*! For license information please see Elu.js.LICENSE.txt */
+import{Elu}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const eluConfig=createUnaryKernelConfig(Elu);

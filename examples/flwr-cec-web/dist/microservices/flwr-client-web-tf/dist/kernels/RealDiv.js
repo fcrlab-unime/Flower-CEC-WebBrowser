@@ -1,0 +1,2 @@
+/*! For license information please see RealDiv.js.LICENSE.txt */
+import{RealDiv}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!0;export const realDivConfig=createBinaryKernelConfig(RealDiv,!0);

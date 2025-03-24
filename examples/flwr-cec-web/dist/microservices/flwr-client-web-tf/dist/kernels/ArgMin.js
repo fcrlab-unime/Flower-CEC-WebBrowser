@@ -1,0 +1,2 @@
+/*! For license information please see ArgMin.js.LICENSE.txt */
+import{ArgMin}from"@tensorflow/tfjs-core";import{createArgMinMaxKernelConfig}from"./argminmax_kernel";export const argMinConfig=createArgMinMaxKernelConfig(ArgMin);

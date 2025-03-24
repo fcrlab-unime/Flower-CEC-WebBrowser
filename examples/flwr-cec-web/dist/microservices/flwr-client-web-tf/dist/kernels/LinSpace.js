@@ -1,0 +1,2 @@
+/*! For license information please see LinSpace.js.LICENSE.txt */
+import{LinSpace}from"@tensorflow/tfjs-core";let wasmLinSpace;function setup(e){wasmLinSpace=e.wasm.cwrap(LinSpace,null,["number","number","number","number"])}export function linSpace(e){const{attrs:n,backend:a}=e,{start:t,stop:c,num:p}=n,r=Math.floor(p),o=a.makeOutput([r],"float32");return wasmLinSpace(a.dataIdMap.get(o.dataId).id,t,c,r),o}export const linSpaceConfig={kernelName:LinSpace,backendName:"wasm",setupFunc:setup,kernelFunc:linSpace};

@@ -1,0 +1,2 @@
+/*! For license information please see SparseSegmentMean.js.LICENSE.txt */
+import{SparseSegmentMean}from"@tensorflow/tfjs-core";import{setup,sparseSegmentReduction}from"./SparseSegmentReduction";function sparseSegmentMean(e){return sparseSegmentReduction(e,!0)}export const sparseSegmentMeanConfig={kernelName:SparseSegmentMean,backendName:"wasm",setupFunc:setup,kernelFunc:sparseSegmentMean};

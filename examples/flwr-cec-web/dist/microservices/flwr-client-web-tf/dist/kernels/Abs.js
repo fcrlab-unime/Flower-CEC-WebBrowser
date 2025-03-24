@@ -1,0 +1,2 @@
+/*! For license information please see Abs.js.LICENSE.txt */
+import{Abs}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const absConfig=createUnaryKernelConfig(Abs);

@@ -1,0 +1,2 @@
+/*! For license information please see Acos.js.LICENSE.txt */
+import{Acos}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const acosConfig=createUnaryKernelConfig(Acos);

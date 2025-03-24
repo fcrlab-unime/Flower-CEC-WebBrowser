@@ -1,0 +1,2 @@
+/*! For license information please see LogicalNot.js.LICENSE.txt */
+import{LogicalNot}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const logicalNotConfig=createUnaryKernelConfig(LogicalNot);

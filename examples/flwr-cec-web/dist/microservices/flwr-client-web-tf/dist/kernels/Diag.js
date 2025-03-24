@@ -1,0 +1,2 @@
+/*! For license information please see Diag.js.LICENSE.txt */
+import{Diag,util}from"@tensorflow/tfjs-core";import{CppDType}from"./types";let wasmDiag;function setup(a){wasmDiag=a.wasm.cwrap("Diag",null,["number","number","number","number"])}export function diag(a){const{inputs:e,backend:t}=a,{x:p}=e,n=util.sizeFromShape(p.shape),i=t.makeOutput([...p.shape,...p.shape],p.dtype);return wasmDiag(t.dataIdMap.get(p.dataId).id,CppDType[p.dtype],n,t.dataIdMap.get(i.dataId).id),i}export const diagConfig={kernelName:Diag,backendName:"wasm",setupFunc:setup,kernelFunc:diag};

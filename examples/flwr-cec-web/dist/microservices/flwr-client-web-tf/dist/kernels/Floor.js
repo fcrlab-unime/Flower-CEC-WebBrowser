@@ -1,0 +1,2 @@
+/*! For license information please see Floor.js.LICENSE.txt */
+import{Floor}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const floorConfig=createUnaryKernelConfig(Floor);

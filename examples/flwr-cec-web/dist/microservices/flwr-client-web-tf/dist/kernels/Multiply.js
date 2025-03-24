@@ -1,0 +1,2 @@
+/*! For license information please see Multiply.js.LICENSE.txt */
+import{Multiply}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!0;export const multiplyConfig=createBinaryKernelConfig(Multiply,!0);

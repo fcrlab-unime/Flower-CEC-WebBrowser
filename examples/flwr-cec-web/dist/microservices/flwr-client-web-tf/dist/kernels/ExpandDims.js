@@ -1,0 +1,2 @@
+/*! For license information please see ExpandDims.js.LICENSE.txt */
+import{ExpandDims,util}from"@tensorflow/tfjs-core";import{reshape}from"./Reshape";export function expandDims(e){const{inputs:s,attrs:t,backend:n}=e,{input:a}=s,{dim:i}=t,p=a.shape.length,r=a.shape.slice();let m=i;return i<0&&(util.assert(-(p+1)<=i,(()=>`Axis must be in the interval [${-(p+1)}, ${p}]`)),m=p+i+1),r.splice(m,0,1),reshape({inputs:{x:a},backend:n,attrs:{shape:r}})}export const expandDimsConfig={kernelName:ExpandDims,backendName:"wasm",kernelFunc:expandDims};

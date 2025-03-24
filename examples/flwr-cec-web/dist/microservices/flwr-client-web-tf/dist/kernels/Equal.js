@@ -1,0 +1,2 @@
+/*! For license information please see Equal.js.LICENSE.txt */
+import{Equal}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const equalConfig=createBinaryKernelConfig(Equal,!1,"bool");

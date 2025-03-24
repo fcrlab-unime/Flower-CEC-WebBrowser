@@ -1,0 +1,2 @@
+/*! For license information please see BroadcastArgs.js.LICENSE.txt */
+import{backend_util,BroadcastArgs}from"@tensorflow/tfjs-core";export function broadcastArgs(r){const{inputs:a,backend:t}=r,{s0:e,s1:o}=a,s=t.typedArrayFromHeap(e),n=t.typedArrayFromHeap(o),c=backend_util.assertAndGetBroadcastShape(Array.from(s),Array.from(n));return t.makeOutput([c.length],"int32",void 0,new Int32Array(c))}export const broadcastArgsConfig={kernelName:BroadcastArgs,backendName:"wasm",kernelFunc:broadcastArgs};

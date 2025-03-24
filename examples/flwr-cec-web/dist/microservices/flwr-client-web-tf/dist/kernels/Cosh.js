@@ -1,0 +1,2 @@
+/*! For license information please see Cosh.js.LICENSE.txt */
+import{Cosh}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const coshConfig=createUnaryKernelConfig(Cosh);

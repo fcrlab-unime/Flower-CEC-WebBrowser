@@ -1,0 +1,2 @@
+/*! For license information please see IsFinite.js.LICENSE.txt */
+import{IsFinite}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const isFiniteConfig=createUnaryKernelConfig(IsFinite,"bool");

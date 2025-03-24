@@ -1,0 +1,2 @@
+/*! For license information please see Square.js.LICENSE.txt */
+import{Square}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const squareConfig=createUnaryKernelConfig(Square);

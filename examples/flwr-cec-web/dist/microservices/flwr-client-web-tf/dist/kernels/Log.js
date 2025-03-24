@@ -1,0 +1,2 @@
+/*! For license information please see Log.js.LICENSE.txt */
+import{Log}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const logConfig=createUnaryKernelConfig(Log);

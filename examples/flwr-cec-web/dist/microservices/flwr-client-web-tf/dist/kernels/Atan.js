@@ -1,0 +1,2 @@
+/*! For license information please see Atan.js.LICENSE.txt */
+import{Atan}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const atanConfig=createUnaryKernelConfig(Atan);

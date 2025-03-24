@@ -1,0 +1,2 @@
+/*! For license information please see LessEqual.js.LICENSE.txt */
+import{LessEqual}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const lessEqualConfig=createBinaryKernelConfig(LessEqual,!1,"bool");

@@ -1,0 +1,2 @@
+/*! For license information please see unary_kernel.js.LICENSE.txt */
+import{util}from"@tensorflow/tfjs-core";import{CppDType}from"./types";export function createUnaryKernelConfig(e,t){let n;return{kernelName:e,backendName:"wasm",setupFunc:function(t){n=t.wasm.cwrap(e,null,["number","number","number"])},kernelFunc:function(e){const{backend:a,inputs:{x:p}}=e,r=a.dataIdMap.get(p.dataId).id,u=a.makeOutput(p.shape,t||p.dtype),d=a.dataIdMap.get(u.dataId).id;return 0===util.sizeFromShape(u.shape)||n(r,CppDType[p.dtype],d),u}}}

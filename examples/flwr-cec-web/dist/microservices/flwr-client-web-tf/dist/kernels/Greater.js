@@ -1,0 +1,2 @@
+/*! For license information please see Greater.js.LICENSE.txt */
+import{Greater}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const greaterConfig=createBinaryKernelConfig(Greater,!1,"bool");

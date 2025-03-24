@@ -1,0 +1,2 @@
+/*! For license information please see Sin.js.LICENSE.txt */
+import{Sin}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const sinConfig=createUnaryKernelConfig(Sin);

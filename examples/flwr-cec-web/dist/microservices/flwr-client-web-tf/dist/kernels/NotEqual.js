@@ -1,0 +1,2 @@
+/*! For license information please see NotEqual.js.LICENSE.txt */
+import{NotEqual}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const notEqualConfig=createBinaryKernelConfig(NotEqual,!1,"bool");

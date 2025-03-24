@@ -1,0 +1,2 @@
+/*! For license information please see EluGrad.js.LICENSE.txt */
+import{EluGrad}from"@tensorflow/tfjs-core";let wasmEluGrad;function setup(a){wasmEluGrad=a.wasm.cwrap(EluGrad,null,["number","number","number"])}export function eluGrad(a){const{inputs:e,backend:u}=a,{dy:r,y:t}=e,n=u.makeOutput(t.shape,"float32"),d=a=>u.dataIdMap.get(a.dataId).id;return wasmEluGrad(d(t),d(r),d(n)),n}export const eluGradConfig={kernelName:EluGrad,backendName:"wasm",setupFunc:setup,kernelFunc:eluGrad};

@@ -1,0 +1,2 @@
+/*! For license information please see IsInf.js.LICENSE.txt */
+import{IsInf}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const isInfConfig=createUnaryKernelConfig(IsInf,"bool");

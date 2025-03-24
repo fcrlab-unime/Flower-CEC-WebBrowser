@@ -1,0 +1,2 @@
+/*! For license information please see FloorDiv.js.LICENSE.txt */
+import{FloorDiv}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const floorDivConfig=createBinaryKernelConfig(FloorDiv,!1);

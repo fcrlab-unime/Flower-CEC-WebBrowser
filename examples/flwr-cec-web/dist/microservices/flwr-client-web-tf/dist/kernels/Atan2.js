@@ -1,0 +1,2 @@
+/*! For license information please see Atan2.js.LICENSE.txt */
+import{Atan2}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";export const atan2Config=createBinaryKernelConfig(Atan2,!1);

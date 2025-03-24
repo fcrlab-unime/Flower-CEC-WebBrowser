@@ -1,0 +1,2 @@
+/*! For license information please see Selu.js.LICENSE.txt */
+import{Selu}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const seluConfig=createUnaryKernelConfig(Selu);

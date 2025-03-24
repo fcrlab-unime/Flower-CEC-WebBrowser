@@ -1,0 +1,2 @@
+/*! For license information please see OnesLike.js.LICENSE.txt */
+import{OnesLike}from"@tensorflow/tfjs-core";function onesLike(e){const{inputs:{x:n},backend:o}=e,t=o.makeOutput(n.shape,n.dtype);return o.typedArrayFromHeap(t).fill(1),t}export const onesLikeConfig={kernelName:OnesLike,backendName:"wasm",kernelFunc:onesLike};

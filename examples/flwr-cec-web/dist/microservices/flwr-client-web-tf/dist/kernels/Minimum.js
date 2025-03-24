@@ -1,0 +1,2 @@
+/*! For license information please see Minimum.js.LICENSE.txt */
+import{Minimum}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const minimumConfig=createBinaryKernelConfig(Minimum,!1);

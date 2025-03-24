@@ -1,0 +1,2 @@
+/*! For license information please see Softplus.js.LICENSE.txt */
+import{Softplus}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const softplusConfig=createUnaryKernelConfig(Softplus);

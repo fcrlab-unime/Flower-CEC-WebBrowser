@@ -1,0 +1,2 @@
+/*! For license information please see Tanh.js.LICENSE.txt */
+import{Tanh}from"@tensorflow/tfjs-core";import{createUnaryKernelConfig}from"./unary_kernel";export const tanhConfig=createUnaryKernelConfig(Tanh);

@@ -1,0 +1,2 @@
+/*! For license information please see SquaredDifference.js.LICENSE.txt */
+import{SquaredDifference}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!0;export const squaredDifferenceConfig=createBinaryKernelConfig(SquaredDifference,!0);

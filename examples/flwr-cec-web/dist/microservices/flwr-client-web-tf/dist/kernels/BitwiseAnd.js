@@ -1,0 +1,2 @@
+/*! For license information please see BitwiseAnd.js.LICENSE.txt */
+import{BitwiseAnd}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!0;export const bitwiseAndConfig=createBinaryKernelConfig(BitwiseAnd,!0);

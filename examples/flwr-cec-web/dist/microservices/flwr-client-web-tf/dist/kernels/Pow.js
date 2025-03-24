@@ -1,0 +1,2 @@
+/*! For license information please see Pow.js.LICENSE.txt */
+import{Pow}from"@tensorflow/tfjs-core";import{createBinaryKernelConfig}from"./binary_kernel";const supportsFullBroadcast=!1;export const powConfig=createBinaryKernelConfig(Pow,!1);
