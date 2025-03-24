@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <title>Client</title>
+    <script src="/config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h4 id="flwr-cec" style="display: none">
+      Flower Client CEC
+    </h4>
+    <h1>Client</h1>
+    <div id="gui" style="display: none">
+
+      <div id="stats" style="display: none">
+        <div class="canvas-container">
+          <button id="button1" onclick="roundLossChart.resetZoom()">
+            Reset Zoom
+          </button>
+          <div>
+            <canvas id="roundLoss" width="400" height="200"></canvas>
+          </div>
+        </div>
+        <br />
+        <div class="canvas-container">
+          <button id="button1" onclick="epochLossChart.resetZoom()">
+            Reset Zoom
+          </button>
+          <div>
+            <canvas id="epochLoss" width="400" height="200"></canvas>
+          </div>
+        </div>
+        <div class="button-container">
+          <button id="button1" onclick="exportJSON()">Export JSON</button>
+          <button id="button2" onclick="exportCSV()">Export CSV</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/libraries/kleint-min.js"></script>
+  <script src="assets/js/loss.js"></script>
+  <script src="index.js"></script>
+</html>
