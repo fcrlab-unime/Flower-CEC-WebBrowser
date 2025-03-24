@@ -1,0 +1,24 @@
+
+version: '3'
+services:
+
+  client1:
+    container_name: flwr-cec-pytorch-client-1
+    image: flwr-cec-client-pytorch
+    volumes:
+      - .:/app
+    environment:
+      container_name: flwr-cec-pytorch-client-1
+      AGG_SERVER: flwr-cec-aggregator
+      WEBSERVER: flwr-cec-webserver
+      AGG_PORT: 8080
+      MODEL: dnn
+      DATASET: mnist
+      EPOCHS: 5
+      CLIENT_ID: 1
+    
+    networks:
+      - flwr-cec-net
+networks:
+  flwr-cec-net:
+    external: true
