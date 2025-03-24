@@ -1,0 +1,42 @@
+networks:
+  flwr-cec-net:
+    name: flwr-cec-net
+    driver: bridge
+
+services:
+  flwr-cec-webserver:
+    container_name: flwr-cec-webserver
+    image: nginx
+    ports:
+      - "31013:31013"
+    volumes:
+      - ../config.js:/usr/share/nginx/html/config.js
+      - ../extra/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ../examples/flwr-cec-web/src/frontend/public/index.html:/usr/share/nginx/html/index.html
+      - ../extra/kleint:/usr/share/nginx/html/libraries
+      - ../examples/flwr-cec-web/src/frontend/public/client:/usr/share/nginx/html/flwr-cec/client
+    networks:
+      - flwr-cec-net
+  flwr-cec-datasets-server:
+    container_name: flwr-cec-datasets-server
+    image: ghcr.io/fcrlab-unime/flw-cec-datasets-server:latest
+    volumes:
+      - ../extra/datasets-server/server/server.py:/app/server.py
+      - ../datasets/config.yml:/app/config.yml
+      - ../datasets/download:/app/datasets
+      - ../datasets/loaders:/app/loaders
+    networks:
+      - flwr-cec-net
+  flwr-cec-kleint-gateway:
+    container_name: flwr-cec-kleint-gateway
+    image: ghcr.io/fcrlab-unime/kleint-gateway:latest
+    ports:
+      - "13579:13579"
+      - "11355:11355"
+    networks:
+      - flwr-cec-net
+    volumes:
+      - ../vpods.yml:/app/virtualpods/vpods.yml
+      - ../examples/flwr-cec-web/dist/microservices/flwr-client-web-ort:/app/virtualpods/flwr-client/flwr-client-web-ort
+      - ../examples/flwr-cec-web/dist/models:/app/virtualpods/flwr-client/flwr-client-web-ort/models
+      - ../examples/flwr-cec-web/dist/microservices/flwr-client-web-tf:/app/virtualpods/flwr-client/flwr-client-web-tf

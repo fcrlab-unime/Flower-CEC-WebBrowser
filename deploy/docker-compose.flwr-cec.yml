@@ -1,0 +1,29 @@
+networks:
+  flwr-cec-net:
+    name: flwr-cec-net
+    driver: bridge
+
+services:
+  flwr-client:
+    container_name: flwr-vpod
+    image: flwr-vpod 
+    environment:
+      - AGG_SERVER=flwr-cec-aggregator
+      - AGG_PORT=8080
+    volumes:
+      - ../src/flwr-vpod/src/main.py:/app/main.py
+      - ../src/flwr-vpod/src/client_flower.py:/app/client_flower.py
+    networks:
+      - flwr-cec-net
+
+  flwr-cec-aggregator:
+    container_name: flwr-cec-aggregator
+    image: flwr-cec-aggregator
+    ports:
+      - "8080:8080"
+    env_file:
+      - ../.env
+    volumes:
+      - ../examples/flwr-aggregator/server_aggregator.py:/app/server_aggregator.py
+    networks:
+      - flwr-cec-net
