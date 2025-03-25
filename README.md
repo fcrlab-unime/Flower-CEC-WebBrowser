@@ -22,10 +22,10 @@ The solution adopts the Cloud-Edge-Client Continuum paradigm, which extends trad
 - **Edge** provides localized processing near data sources.
 - **Client devices** (via Web browsers) join the continuum with zero additional configuration, contributing their computational resources seamlessly.
 
-<div align="center">
+<div align="center" style="margin-bottom: 20px">
   <figure>
     <img src="figures/flwr-cec-architecture.png" alt="Flower-CEC Architecture" style="max-width:100%; height:auto;">
-    <figcaption><em>Figure 1: The architecture shows an example of a generic FL configuration using Flower to coordinate FL-clients with hybrid implementations.</em></figcaption>
+    <figcaption><em><center>Figure 1: The architecture shows an example of a generic FL configuration using Flower to coordinate FL-clients with hybrid implementations.</center></em></figcaption>
   </figure>
 </div>
 
@@ -33,10 +33,10 @@ This continuum approach abstracts the traditional client-server model, enabling 
 
 ### Flower-Client Virtual Pod
 
-<div align="center">
+<div align="center" style="margin-bottom: 20px">
   <figure>
     <img src="figures/flower-client-vpod.png" alt="Flower-Client Virtual Pod" style="max-width:100%; height:auto;">
-    <figcaption><em>Figure 2: Flower-Client Virtual Pod. A VPod can run multiple Virtual Flower-Clients, each linked with the respective FL Web Client.</em></figcaption>
+    <figcaption><em><center>Figure 2: Flower-Client Virtual Pod. A VPod can run multiple Virtual Flower-Clients, each linked with the respective FL Web Client.</center></em></figcaption>
   </figure>
 </div>
 
@@ -46,10 +46,10 @@ A core component of this solution is the Flower-Client Virtual Pod (VPod). The V
 - Manages communication through a bidirectional proxy, ensuring that training computations occur within the Web browser while the Flower Server remains unaware of the underlying client implementation.
 - Allows multiple VFCs to run concurrently, facilitating scalable and heterogeneous federated learning deployments.
 
-<div align="center">
+<div align="center" style="margin-bottom: 20px">
   <figure>
     <img src="figures/sequence-diagram.png" alt="Flower-Client Virtual Pod" style="max-width:100%; height:auto;">
-    <figcaption><em>Figure 3: Sequence Diagram. Interactions among components involving FL Web Client via the VPod Flower Client.</em></figcaption>
+    <figcaption><em><center>Figure 3: Sequence Diagram. Interactions among components involving FL Web Client via the VPod Flower Client.</center></em></figcaption>
   </figure>
 </div>
 
