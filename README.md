@@ -13,6 +13,11 @@ Related work:
 
 This repository implements a solution that seamlessly integrates the Flower framework with Web browsers for federated learning (FL). The system is designed to harness the computational power of heterogeneous devices (laptops, smartphones, etc.) without requiring dependency installations or manual configurations on client devices. Instead, the approach leverages a Cloud-Edge-Client Continuum architecture along with the Flower-Client Virtual Pod to transparently manage communication between the central aggregator (Flower Server) and remote Web-based FL clients.
 
+## Requirements
+
+- **Docker & Docker Compose:** For container orchestration and deployment.
+- **Make:** To build and manage project commands.
+
 ## How It Works
 
 ### Cloud-Edge-Client Continuum
