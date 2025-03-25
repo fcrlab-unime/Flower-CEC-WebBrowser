@@ -81,17 +81,13 @@ To get started with the repository, follow these steps:
 
    Configure the environment variables by editing the `.env` file according to your setup. The key variables are:
    
-   - **FRACTION=1**  
-     This variable sets the fraction of clients to be used in each federated learning round. A value of 1 indicates that all available clients will participate.
+   - **FRACTION**: This variable sets the fraction of clients to be used in each federated learning round. A value of 1 indicates that all available clients will participate.
    
-   - **NUM_CLIENTS=2**  
-     This specifies the total number of FL clients that will participate in the federated learning process. It includes both server-side and client-side FL participants.
+   - **NUM_CLIENTS**: This specifies the total number of FL clients that will participate in the federated learning process. It includes both server-side and client-side FL participants.
    
-   - **NUM_ROUNDS=15**  
-     This indicates the total number of federated learning rounds to be executed during the training process.
+   - **NUM_ROUNDS**: This indicates the total number of federated learning rounds to be executed during the training process.
    
-   - **SERVER_SIDE_CLIENTS=1**  
-     This defines the number of FL clients that will be launched on the server side using the classic Flower Client implementation, typically developed in PyTorch. These server-side clients operate alongside the web-based FL clients to form a hybrid configuration.
+   - **SERVER_SIDE_CLIENTS**: This defines the number of FL clients that will be launched on the server side using the classic Flower Client implementation, typically developed in PyTorch. These server-side clients operate alongside the web-based FL clients to form a hybrid configuration.
 
 
 5. **Run the Entire Architecture (CEC + Flower)**
