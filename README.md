@@ -2,7 +2,7 @@
 
 ## Publications
 
-- **Enabling Flower for Federated Learning in Web Browsers in the Cloud-Edge-Client Continuum.**  M. Colosi, A. Catalfamo, M. Garofalo, and M. Villari. In Proceedings of the *IEEE/ACM 17th International Conference on Utility and Cloud Computing (UCC 2024)*. [https://doi.org/10.1109/UCC63386.2024.00048](https://doi.org/10.1109/UCC63386.2024.00048)
+- **Enabling Flower for Federated Learning in Web Browsers in the Cloud-Edge-Client Continuum.**  M. Colosi, A. Catalfamo, M. Garofalo, and M. Villari. In Proceedings of the *IEEE/ACM 17th International Conference on Utility and Cloud Computing (UCC 2024)*. Proceedings will be published soon.
 
 Related work:
 - **Cloud-Edge-Client Continuum: Leveraging Browsers as Deployment Nodes with Virtual Pods.** M. Colosi, M. Garofalo, A. Galletta, M. Fazio, A. Celesti, and M. Villari. 2024. In Proceedings of the *IEEE/ACM 10th International Conference on Big Data Computing, Applications and Technologies (BDCAT '23)*. [https://doi.org/10.1145/3632366.3632395](https://doi.org/10.1145/3632366.3632395)
